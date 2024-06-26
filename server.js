@@ -12,7 +12,7 @@ import orderRouter from "./routes/autoroute.js"
 
 // app config
 const app = express();
-const port = 4000;
+const port = process.env.port || 4000;
 
 // connect to database
 connectDB();
